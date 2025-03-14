@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice game</title>
+   <link rel="stylesheet" href="game.css">
+   <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL4BSMSkmfn-sXLspF07U6sqodLo04GTuczA&s">
+
+   <script src="script.js" async></script>
+</head>
+<body>
+   <div id="con">
+    <header id="title">
+        <p id="codd" class="f"></p>
+        <h1 class="f">Dice Game</h1>
+       
+        <p id="ceven" class="f"></p>
+    </header>
+   
+
+    <div id="details">
+        <p id="money" class="f"></p>
+        <p id="rolls" class="f"></p>
+       <button id="link" style="margin-top: 5px;"> <p style="color:black;  font-size: 1.5em;" id="l">Instructions- Click Me!</p></button>
+
+    </div>
+    <div id="right">
+        <p style="margin-top: 10%;"class="f">SHOP<br>
+            ↓<br>
+        </p>
+    </div>
+    <div id="shop" class="f">
+        <button class="buy" onclick="bgc()" id="bgc"  class="f">New Background Color: 10 ODD ROLLS</button>
+        <button class="buy" onclick="music()" id="music"  class="f">Background Music: 15 EVEN ROLLS</button>
+        <button class="buy" onclick="doubl()" id="double"  class="f">Double Current Correct rolls: $10000</button>
+        <button class="buy" onclick="donate()" id="donate"  class="f">DONATE</button>
+    </div>
+    <div id="roll">
+        <p id="number"  class="f"></p>
+        <p id="cc"> <span style="color: black; border:1px solid black" id="num1"></span> + <span style="color: black;" id="num2"></span></p>
+        <p id="bad" class="f"></p>
+        
+
+       
+   <h2 style="color: black;" id="rolling"  class="f" >Pick one</h2>
+    <button id="reset" onclick="resee()"  class="f">Reset</button>
+    <div id="guess">
+    <button class="button" onclick="even()" id="even"  class="f">Even</button>
+    <button class="button" onclick="odd()" id="odd"  class="f">Odd</button>
+    </div>
+    </div>
+    <div id="a">
+    
+    <img src="https://media1.tenor.com/m/hOyuiw6KQIEAAAAC/wealth.gif" alt="spinnin" id="d">
+</div>
+    <!-- <img src="sorry-temporarily-out-of-stock-sign-vector.jpg" alt="Sorry out of stock" id="s"> -->
+    
+     </div>
+
+    
+   </div> 
+   
+   <div id="in">
+    <h2>Instructions</h2>
+    <p>Click even or odd when you click it will roll a die 2-12 </p>
+    <p>If you click odd and roll an odd number you’ll earn 20% of your money and get a correct odd roll which can be used  in the shop, if you guess odd and roll an even you’ll lose 10% of your money
+       <br> The same principle applies to even roll.
+        </p> <br>
+
+        <p>There’s a 1/40 chance to lose half your money</p><br>
+        <p>Shop values: <br>
+            1.5k dollars for music <br>
+            2k for background colors <br>
+            6k for double correct rolls <br>
+            </p>
+            <p>Note: Refreshing resets everything!</p><br>
+            <button id="clos"><h3  style="color:black">Click here to close instructions</h3></button>
+</div>
+
+   <audio src="cartoon-fail-trumpet-278822.mp3" id="fail"></audio>
+   <audio src="yay-6326.mp3" id="yay"></audio>
+   
+ 
+
+   <!--Background Music-->
+   <audio src="sad-dramatic-piano-sad-alone-drama-262415.mp3" id="backgroundMusic"></audio>
+   <audio src="spa-massage-music-relaxation-healing-chill-background-intro-304093.mp3" id="spa"></audio>
+   <audio src="horror-background-music-302076.mp3" id="horror"></audio>
+   <audio src="chill-vibes-lofi-chill-hiphop-background-music-304596.mp3" id="chill"></audio>
+   <audio src="corporate-technology-background-music-303079.mp3" id="corp"></audio>
+
+
+  
+</body>
+</html>
